@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1209
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task", "Task\Task.csproj", "{E97C2445-5B72-40F7-8300-F992B297CB48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{810BBA84-3F74-4F52-A2BC-2B6FD0EF3794}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermutationEngine", "Engine\PermutationEngine.csproj", "{810BBA84-3F74-4F52-A2BC-2B6FD0EF3794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

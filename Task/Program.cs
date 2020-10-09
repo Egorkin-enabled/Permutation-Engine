@@ -11,80 +11,60 @@ namespace Task
             Repeat:
             //Enter data
             WriteLine("Enter a:");
-            Perestanovka a = ReadPerestanovka();
+            Permutation a = ReadPermutation();
 
             WriteLine("Enter b:");
-            Perestanovka b = ReadPerestanovka();
+            Permutation b = ReadPermutation();
 
             WriteLine();
 
             // a^(-1)
             WriteLine("a^(-1)");
-            var aCopy = (Perestanovka)a.Clone();
-            aCopy.Pow(-1);
-            WriteLine(aCopy);
+            WriteLine(a ^ -1);
 
             //b^(-2)
             WriteLine("b^(-2)");
-            var bCopy = (Perestanovka)b.Clone();
-            bCopy.Pow(-2);
-            WriteLine(bCopy);
+            WriteLine(b ^ -2);
 
             //a * b
             WriteLine("a*b");
-            aCopy = (Perestanovka)a.Clone();
-            bCopy = (Perestanovka)b.Clone();
-
-            aCopy.Muilt(bCopy);
-            WriteLine(aCopy);
+            WriteLine(a * b);
 
             //b * a
             WriteLine("b*a");
-            aCopy = (Perestanovka)a.Clone();
-            bCopy = (Perestanovka)b.Clone();
-
-            bCopy.Muilt(aCopy);
-            WriteLine(bCopy);
+            WriteLine(b * a);
 
             //a^3
             WriteLine("a^3");
-            aCopy = (Perestanovka)a.Clone();
-            aCopy.Pow(3);
-            WriteLine(aCopy);
+            WriteLine(a ^ 3);
 
             //b^4
             WriteLine("b^4");
-            bCopy = (Perestanovka)b.Clone();
-            bCopy.Pow(4);
-            WriteLine(bCopy);
+            WriteLine(b ^ 4);
 
             //a^55
             WriteLine("a^55");
-            aCopy = (Perestanovka)a.Clone();
-            aCopy.Pow(55);
-            WriteLine(aCopy);
+            WriteLine(a ^ 55);
 
             //b^-99
             WriteLine("b^(-99)");
-            bCopy = (Perestanovka)b.Clone();
-            bCopy.Pow(-99);
-            WriteLine(bCopy);
+            WriteLine(b ^ -99);
 
             //Calc poradok
-            Write("порядок a равен ");
-            WriteLine(a.CalcPoradok());
+            Write("order of a is ");
+            WriteLine(a.CalcOrder());
 
 
-            Write("порядок b равен ");
+            Write("order of b is ");
             //b.MakeNegative();
-            WriteLine(b.CalcPoradok());
+            WriteLine(b.CalcOrder());
 
             WriteLine();
             WriteLine("All fine. Repeat? (y/n)");
             if (ReadLine().Trim() == "y")
                 goto Repeat;
 
-            
+
         }
     }
 }

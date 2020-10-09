@@ -15,7 +15,7 @@ namespace Engine
             b = tmp;
         }
 
-        public static Perestanovka ReadPerestanovka()
+        public static Permutation ReadPermutation()
         {
             string[] a  = Console.ReadLine().Split(new []{ ' ' }, StringSplitOptions.RemoveEmptyEntries);
             string[] b = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries); ;
@@ -28,7 +28,7 @@ namespace Engine
                 inp[x, 1] = int.Parse(b[x]);
             }
 
-            return new Perestanovka(inp);
+            return new Permutation(inp);
         }
     }
 }
