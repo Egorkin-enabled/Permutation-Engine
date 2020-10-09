@@ -1,5 +1,5 @@
-﻿using Engine;
-using static Engine.Utils;
+﻿using PermutationEngine;
+using static PermutationEngine.Utils;
 using static System.Console;
 
 namespace Task
@@ -11,10 +11,10 @@ namespace Task
             Repeat:
             //Enter data
             WriteLine("Enter a:");
-            Permutation a = ReadPermutation();
+            Permutation a = ReadPermutationFromConsole();
 
             WriteLine("Enter b:");
-            Permutation b = ReadPermutation();
+            Permutation b = ReadPermutationFromConsole();
 
             WriteLine();
 

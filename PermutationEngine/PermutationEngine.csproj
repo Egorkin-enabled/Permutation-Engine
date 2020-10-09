@@ -7,7 +7,7 @@
     <ProjectGuid>{810BBA84-3F74-4F52-A2BC-2B6FD0EF3794}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Engine</RootNamespace>
+    <RootNamespace>PermutationEngine</RootNamespace>
     <AssemblyName>PermutationEngine</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

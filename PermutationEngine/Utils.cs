@@ -4,18 +4,28 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Engine
+namespace PermutationEngine
 {
+    /// <summary>
+    /// Содержит методы утилиты.
+    /// </summary>
     public static class Utils
     {
-        public static void Swip(ref int a, ref int b)
+        /// <summary>
+        /// Меняет местами два объекта.
+        /// </summary>
+        public static void Swip<T>(ref T a, ref T b)
         {
-            int tmp = a;
+            T tmp = a;
             a = b;
             b = tmp;
         }
 
-        public static Permutation ReadPermutation()
+        /// <summary>
+        /// Читает с консоли перестановку.
+        /// </summary>
+        /// <returns></returns>
+        public static Permutation ReadPermutationFromConsole()
         {
             string[] a  = Console.ReadLine().Split(new []{ ' ' }, StringSplitOptions.RemoveEmptyEntries);
             string[] b = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries); ;

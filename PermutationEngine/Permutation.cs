@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 using System.Linq;
-using static Engine.Utils;
+using static PermutationEngine.Utils;
 
-namespace Engine
+namespace PermutationEngine
 {
 
     /// <summary>
@@ -162,12 +162,29 @@ namespace Engine
 
         public int Length => vars.GetLength(0);
 
+        /// <summary>
+        /// Умнажает перестановки.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static Permutation operator *(Permutation a, Permutation b)
             => a.Muilt(b);
 
+        /// <summary>
+        /// Возводит перестановку в степень.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="pow"></param>
+        /// <returns></returns>
         public static Permutation operator ^(Permutation a, int pow)
             => a.Pow(pow);
 
+        /// <summary>
+        /// Переворачивает перестановку.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Permutation operator ~(Permutation a)
             => a.MakeNegative();
     }

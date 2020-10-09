@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PermutationEngine</name>
+    </assembly>
+    <members>
+        <member name="T:PermutationEngine.Permutation">
+            <summary>
+            Представляет собой порядок.
+            </summary>
+        </member>
+        <member name="M:PermutationEngine.Permutation.CalcOrder">
+            <summary>
+            Вычисляет порядок.
+            </summary>
+            <returns>Порядок перестановки.</returns>
+        </member>
+        <member name="M:PermutationEngine.Permutation.MakeSingularPermutation(System.Int32)">
+            <summary>
+            Создает еденичную перестановку.
+            </summary>
+            <param name="length">длинна еденичной перестановки.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PermutationEngine.Permutation.Pow(System.Int32)">
+            <summary>
+            Возводит перестановку в степень.
+            </summary>
+            <param name="x">степень перестановки.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PermutationEngine.Permutation.Muilt(PermutationEngine.Permutation)">
+            <summary>
+            Умножает подстановки.
+            </summary>
+            <param name="p">Та на которую умнажаем.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PermutationEngine.Permutation.MakeNegative">
+            <summary>
+            Переворачивает подстановку.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PermutationEngine.Permutation.op_Multiply(PermutationEngine.Permutation,PermutationEngine.Permutation)">
+            <summary>
+            Умнажает перестановки.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PermutationEngine.Permutation.op_ExclusiveOr(PermutationEngine.Permutation,System.Int32)">
+            <summary>
+            Возводит перестановку в степень.
+            </summary>
+            <param name="a"></param>
+            <param name="pow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PermutationEngine.Permutation.op_OnesComplement(PermutationEngine.Permutation)">
+            <summary>
+            Переворачивает перестановку.
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PermutationEngine.Utils">
+            <summary>
+            Содержит методы утилиты.
+            </summary>
+        </member>
+        <member name="M:PermutationEngine.Utils.Swip``1(``0@,``0@)">
+            <summary>
+            Меняет местами два объекта.
+            </summary>
+        </member>
+        <member name="M:PermutationEngine.Utils.ReadPermutationFromConsole">
+            <summary>
+            Читает с консоли перестановку.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

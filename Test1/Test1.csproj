@@ -44,7 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Engine\PermutationEngine.csproj">
+    <ProjectReference Include="..\PermutationEngine\PermutationEngine.csproj">
       <Project>{810bba84-3f74-4f52-a2bc-2b6fd0ef3794}</Project>
       <Name>PermutationEngine</Name>
     </ProjectReference>
